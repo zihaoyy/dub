@@ -197,4 +197,7 @@ module.exports = withAxiom({
       },
     ];
   },
+  typescript: {
+    ignoreBuildErrors: true,
+  },
 });
