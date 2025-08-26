@@ -45,6 +45,8 @@ model RegisteredDomain {
 
 model DefaultDomains {
   id          String  @id @default(cuid())
+  fvcx        Boolean @default(true)
+  adoicn      Boolean @default(true)
   dublink     Boolean @default(false)
   dubsh       Boolean @default(true)
   chatgpt     Boolean @default(true)

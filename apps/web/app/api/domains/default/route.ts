@@ -16,6 +16,8 @@ export const GET = withWorkspace(
         projectId: workspace.id,
       },
       select: {
+        fvcx: true,
+        adoicn: true,
         dubsh: true,
         dublink: true,
         chatgpt: true,
@@ -73,6 +75,8 @@ export const PATCH = withWorkspace(
         projectId: workspace.id,
       },
       data: {
+        fvcx: defaultDomains.includes("fv.cx"),
+        adoicn: defaultDomains.includes("adoi.cn"),
         dubsh: defaultDomains.includes("dub.sh"),
         dublink: defaultDomains.includes("dub.link"),
         chatgpt: defaultDomains.includes("chatg.pt"),
